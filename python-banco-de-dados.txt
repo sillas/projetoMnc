@@ -1,5 +1,5 @@
 python-banco-de-dados
-host: mysql.hostinger.com.br
-banco de dados: u242522123_mnc
-usuario: u242522123_main
-senha: ch0y0r09
+host: 10.7.168.113
+banco de dados: mydb
+usuario: usuario
+senha: 1234
