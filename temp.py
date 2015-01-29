@@ -3,7 +3,7 @@ produtos		clientes		Compras
 ---------------------------------------------------------------
 -codigo	(auto)		-id			-carrinho
 -nome			-nome			-valor_total
--quant			-telefone		-status	
+-quant			-telefone		                -status	
 -preco			-cpf
 -descricao		-Dnascimento
 			-endereco
@@ -27,20 +27,13 @@ categoria = {
 
 
 
-1 - conexão com o BD e carregamento na memoria (biblioteca)
+1 - conexao com o BD e carregamento na memoria (biblioteca)
 dos dados dos produtos
 
-2 - manipulação dos dados
+2 - manipulacao dos dados
 
 3 - salva apenas os dados alterados no BD
 '''
-
-
-
-
-
-
-
 
 
 class Produtos:
@@ -52,7 +45,7 @@ class Produtos:
         #-------------------------
         if produto in self.produtos:
             print produto,':',produtos[produto]
-            ok = raw_input('Produto ja existe, deseja alterar? Sim ou não')
+            ok = raw_input('Produto ja existe, deseja alterar? Sim ou nao')
             #-------------------------
             if ok == 'Sim' or ok == 'SIM' or ok == 'sim' or ok == 's' or ok == 'S':
 				
@@ -80,7 +73,7 @@ class Produtos:
 
 
 
-    #esta funcao fas uma pesquisa por produtos
+    #esta funcao faz uma pesquisa por produtos
     def busca(self, consulta = '', end = 'no'):
         ok = False
         #consulta por preco
@@ -132,7 +125,6 @@ class Produtos:
 
             if type(quant) == str:
                 self.produtos[produto]['descricao'] = desc
-
             return True
         #-------------------------			
         else:
@@ -167,19 +159,19 @@ class Produtos:
 
 
 
-	#esta funcao remove todos os produtos
-	def removeAll(self):
-		#-------------------------
-		ok = raw_input('Deseja remover TODOS os produtos? Sim ou não')
-		if ok == 'Sim' or ok == 'SIM' or ok == 'sim' or ok == 's' or ok == 'S':
-			lista = self.produtos.keys()
-			for i in lista:
-				del self.produtos[i]
-			return True
-		#-------------------------
-		else:
-			return False
-		#-------------------------
+    #esta funcao remove todos os produtos
+    def removeAll(self):
+        #-------------------------
+        ok = raw_input('Deseja remover TODOS os produtos? Sim ou não')
+        if ok == 'Sim' or ok == 'SIM' or ok == 'sim' or ok == 's' or ok == 'S':
+            lista = self.produtos.keys()
+            for i in lista:
+                del self.produtos[i]
+            return True
+        #-------------------------
+        else:
+            return False
+        #-------------------------
 
 
     #esta funcao mostra todos os produtos
@@ -190,31 +182,28 @@ class Produtos:
 
 
 #===================================================================================
-
-
 class Cliente:
-	
-	def __init__(self):
-		pass
+    def __init__(self):
+        pass
 
-	def cadastro(self, _nome, _cpf, _rg, _dNascimento, end, logIn, senha, e_mail):
-		pass
+    def cadastro(self, _nome, _cpf, _rg, _dNascimento, end, logIn, senha, e_mail):
+        pass
 
-	def exclui_cadastro():
-		pass
+    def exclui_cadastro():
+        pass
 
-	def carrinho():
-		pass
+    def carrinho():
+        pass
 
-	def compras():
-		pass
+    def compras():
+        pass
 
-	def cMostra():
-		pass
+    def cMostra():
+        pass
 	
 
 
 if __name__ == "__main__":
-	app = app()
-	app.execute()
+    app = app()
+    app.execute()
 	
