@@ -1,5 +1,5 @@
 python-banco-de-dados
 host: 10.7.168.113
 banco de dados: mydb
-usuario: usuario
+usuario: root
 senha: 1234
